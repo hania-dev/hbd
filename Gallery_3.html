@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery ♥</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, #d5abe6, #c687df);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #930db4;
+      padding: 20px 20px 20px 20px;
+      border: solid 5px;
+      border-radius: 50px;
+      display: inline-block;
+      box-shadow: 0 0 15px rgba(127, 12, 156, 0.699);
+      background-color: #efd3ed;
+    }
+
+    .text {
+      display: grid; 
+      grid-template-columns: 1fr;
+      gap: 20px; 
+      max-width: 350px; 
+      margin: 0 auto;
+
+    }
+    p {
+      color: #930db4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: large;
+      padding: 20px 10px 20px 10px;
+      border: solid 2px;
+      text-align: center;
+      border-radius: 50px;
+      display: inline-block;
+      box-shadow: 0 0 15px rgba(127, 12, 156, 0.699);
+      background-color: #efd3ed;
+    }
+   
+    strong {
+      color: #930db4;
+    }
+
+    /* Galeria */
+    .gallery {
+      display: grid; 
+      grid-template-columns: 1fr 1fr; /* 2 kolumny */ 
+      gap: 20px; 
+      max-width: 800px; 
+      margin: 0 auto; 
+    }
+
+    .photo {
+      background: #efd3ed;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(127, 12, 156, 0.699);
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+
+    .photo img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 1.0rem;
+      color: #9d16be;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    button {
+      background: #c13cd3;
+      border: none;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    button:hover {
+      background: #9c23ac;
+      transform: scale(1.05);
+    }
+
+    /* Make links inside buttons look nice */
+    button a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="photo">
+      <img src="pics/yamas-in-gdynia.jpeg" alt="Yamas in Gdynia">
+      <div class="caption">When we missed Greece so much we had to get Greek beer and pita gyro even in 3city.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/gdynia.jpeg" alt="Gdynia">
+      <div class="caption"></div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/cool-baby.jpeg" alt="cool-baby">
+      <div class="caption">We're just so cute</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/cool-me.jpeg" alt="cool-me">
+      <div class="caption">And very cool in those glasses</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/goldwasser.jpeg" alt="Antwerp">
+      <div class="caption">Our cute dinner with unexpected gift :)</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/pizza beach.jpeg" alt="Antwerp">
+      <div class="caption">When we wanted to be cute but we're babies and we don't know how to open bottle.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/me in a skirt.jpeg" alt="Antwerp">
+      <div class="caption">Me after crochet class. I loved how we were just sitting drinking and gossiping.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/kiss in flowers.jpeg" alt="Antwerp">
+      <div class="caption">And then walk in flowers and kiss :) nothing better to end this with.</div>
+    </div>
+
+  </div>
+
+  <div class="text">
+     <p>
+    Hope you enjoyed :) <br>Happy birthday again baby!
+    </p>
+  </div>
+
+    <button><a href="/Gallery.html">Previous page</a></button>
+     <button><a href="/Main page.html">Main page</a></button>
+
+</body>
+</html>

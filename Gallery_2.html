@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Gallery ♥</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, #d5abe6, #c687df);
+      font-family: 'Fredoka', sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #930db4;
+      padding: 20px 20px 20px 20px;
+      border: solid 5px;
+      border-radius: 50px;
+      display: inline-block;
+      box-shadow: 0 0 15px rgba(127, 12, 156, 0.699);
+      background-color: #efd3ed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   
+    strong {
+      color: #930db4;
+    }
+
+    /* Galeria */
+    .gallery {
+      display: grid; 
+      grid-template-columns: 1fr 1fr; /* 2 kolumny */ 
+      gap: 20px; 
+      max-width: 800px; 
+      margin: 0 auto; 
+    }
+
+    .photo {
+      background: #efd3ed;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(127, 12, 156, 0.699);
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+
+    .photo img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 1.0rem;
+      color: #9d16be;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    button {
+      background: #c13cd3;
+      border: none;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    button:hover {
+      background: #9c23ac;
+      transform: scale(1.05);
+    }
+
+    /* Make links inside buttons look nice */
+    button a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <div class="photo">
+      <img src="pics/Selfie in Namur.jpeg" alt="Namur">
+      <div class="caption">Then we visited some more cities together.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/train pic.jpeg" alt="Train">
+      <div class="caption">And we were always cute in love. We tested so much suspicious food.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/Us doing heart.jpeg" alt="Heart">
+      <div class="caption">Cute.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/Baby-in-ramen-place.jpeg" alt="Ramen">
+      <div class="caption">We had nice ramen together :)</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/Us-in-Antwerp-_no-one-stole-phone_.jpeg" alt="Antwerp">
+      <div class="caption">And no one stole our phones ;D</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/one piece burger king.jpeg" alt="Burger king">
+      <div class="caption">Ahhh when we got this shirt.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/amsterdam.jpeg" alt="Amsterdam">
+      <div class="caption">We got all wet but I had fun with you</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/jpg/newyears.jpg" alt="New years">
+      <div class="caption">Then there was winter we got more comfy and stayed inside more.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/napoleon cake.jpeg" alt="Napoleon cake">
+      <div class="caption">Your first kremówka</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/my 21st birthday.jpeg" alt="My birthday">
+      <div class="caption">And my birthday :) Now you're also 21.</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/me with tralarelo tralala.jpeg" alt="Me">
+      <div class="caption">We went to zoo to meet tralalero tralala</div>
+    </div>
+
+    <div class="photo">
+      <img src="pics/jelle with tralarelo tralala.jpeg" alt="Jelle">
+      <div class="caption">You with him as well</div>
+    </div>
+
+  </div>
+
+    <button><a href="/Gallery.html">Previous page</a></button>
+    <button><a href="/Gallery 3rd page.html">Next page</a></button>
+
+</body>
+</html>
